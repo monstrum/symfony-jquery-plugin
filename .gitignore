@@ -1,0 +1,13 @@
+# Project #
+###########
+/Resources/public/*
+
+# Composer #
+############
+/composer.lock
+/vendor
+composer.phar
+
+# Keep .gitkeep #
+#################
+!.gitkeep

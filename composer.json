@@ -1,0 +1,44 @@
+{
+    "name": "monstrum/symfony-jquery-plugin-bundle",
+    "type": "symfony-bundle",
+    "description": "Easy integration of jQuery Plugins into symfony2",
+    "keywords": ["form", "bootstrap", "bootstrap form", "template", "jQuery"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Erwin Eu",
+            "email": "eu.erwin@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Monstrum\\SymfonyJQUeryPluginBundle\\": ""
+        }
+    },
+    "target-dir": "Monstrum/SymfonyJQUeryPluginBundle",
+    "require": {
+        "enyo/dropzone": "^4.0",
+        "johnny/jquery-sortable": "~0.9.13"
+    },
+    "suggest":  {
+    },
+    "repositories": [
+      {
+        "url": "https://github.com/johnny/jquery-sortable.git",
+        "type": "git"
+      }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+//            "Monstrum\\SymfonyJQUeryPluginBundle\\Composer\\ScriptHandler::postInstallSymlinkSymfonyDropZone"
+        ],
+        "post-update-cmd": [
+//            "Monstrum\\SymfonyJQUeryPluginBundle\\Composer\\ScriptHandler::postInstallSymlinkSymfonyDropZone"
+        ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
